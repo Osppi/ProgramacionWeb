@@ -1,0 +1,22 @@
+:root{
+    --color-primario: #3498db;
+    --espaciado: 1rem;
+}
+
+p{
+    color: var(--color-primario)
+}
+
+#copy {
+    color: var(--color-primario)
+}
+
+.tituloFijo{
+    font-size: 20px;
+    margin: 50px;
+}
+
+.tituloRelativo{
+    font-size: 2rem;
+    margin: 5%;
+}

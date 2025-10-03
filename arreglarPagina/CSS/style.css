@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: "Google Sans Code", monospace;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  background-color: rgb(230, 230, 230);
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.productos {
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.descuentos {
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.carrito {
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.tittle{
+  text-align: center;
+  font-size: 40px;
+}
+
+img {
+  float: left;
+  width: 50%;
+}
+
+
+.info {
+  display: grid;
+}
+
+.presentacion {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  background-color: #e7e729;
+}
+
+.contenido{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.contenido img {
+  width: 100%;
+}
+
+.contenido-text {
+   display: flex;
+   justify-items: center;
+   gap: 10px;
+   padding: 10px;
+   height: 100%;
+   align-items: center;
+   
+}
+
+
+.boton {
+  padding: 10px 20px;
+  background-color: #60b430;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+}
+
+.boton:hover{
+  background-color: #60b43083;
+}
+
+.final {
+  display: flex;
+  padding: 15px;
+  background-color: #e7e729;
+  justify-content: center;
+  font-weight: 700;
+}
+    /* Para tablets (mínimo 600px de ancho) */
+    @media (min-width: 600px) {
+      .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 columnas */
+      }
+    }
+
+    /* Para PC (mínimo 1024px de ancho) */
+    @media (min-width: 1024px) {
+      .contenedor {
+        grid-template-columns: 1fr 1fr 1fr; /* 3 columnas */
+      }
+    }
