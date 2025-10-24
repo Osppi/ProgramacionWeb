@@ -5,7 +5,7 @@ document.getElementById("btnConvertir").addEventListener("click", function () {
     if (tipo == document.getElementById("2").value){
         result = (((temp*1.8)+32).toFixed(2))
     } else {
-        result = (temp-32)*0.55
+        result = (((temp-32)*0.55).toFixed(2))
     }
     alert(`Temperatura en ${tipo}: ${result}`) 
 });
